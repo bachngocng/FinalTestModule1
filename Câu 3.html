@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 3</title>
+</head>
+<body>
+<script>
+    // biết trước a,o,e,u,i là các ký tự nguyên âm
+
+    let a = ['b', 'a', 'c', 'h', 'n', 'g', 'u', 'y', 'e', 'n'];
+    let count = 0;
+    function dem(arr) {
+        let b = ['a', 'o', 'e', 'u', 'i'];
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < b.length; j++) {
+                if (a[i] === b[j]) {
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
+    dem(a);
+    document.write(count);
+</script>
+</body>
+</html>
